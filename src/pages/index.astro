@@ -1,10 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Section from '../components/Section.astro';
 import Proyects from '../components/Proyects.astro';
 import Skills from '../components/Skills.astro';
 import Experience from '../components/Experience.astro';
+import Contact from '../components/Contact.astro';
 ---
 
 <Layout title="Portafolio Emanuel Cuello">
@@ -13,12 +13,7 @@ import Experience from '../components/Experience.astro';
 		<Proyects />
 		<Skills />
 		<Experience />
-		<Card
-			class:list={['link-card']}
-			title="Emanuel Cuello"
-			body="Backend Developer"
-			href="www.google.com"
-		/>
+		<Contact />
 	</main>
 </Layout>
 
