@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Section from '../components/Section.astro';
+import Proyects from '../components/Proyects.astro';
+import Skills from '../components/Skills.astro';
+import Experience from '../components/Experience.astro';
+---
+
+<Layout title="Portafolio Emanuel Cuello">
+	<main>
+		<Section />
+		<Proyects />
+		<Skills />
+		<Experience />
+		<Card
+			class:list={['link-card']}
+			title="Emanuel Cuello"
+			body="Backend Developer"
+			href="www.google.com"
+		/>
+	</main>
+</Layout>
+
+<style>
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+</style>
