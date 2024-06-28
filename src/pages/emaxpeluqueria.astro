@@ -1,1 +1,22 @@
-<h1>EmaxPeluqueria</h1>
+---
+import Layout from '../layouts/Layout.astro';
+import Contact from '../components/Contact.astro';
+import Carrousel from '../components/Carrousel.astro';
+import { EmaxPeluImgs, EmaxPelu } from '../utils/contentEmaxPelu';
+import AboutProyect from '../components/AboutProyect.astro';
+import BackyFront from '../components/BackyFront.astro';
+import ProyectSkills from '../components/ProyectSkills.astro';
+---
+
+<Layout title="EmaxPeluqueria">
+	<h1
+		class="text-4xl font-extrabold leading-tight lg:text-6xl cursor-default text-center animate-text-gradient bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-transparent pt-2 pb-5 mb-5"
+	>
+		EmaxPeluqueria
+	</h1>
+	<Carrousel imgUrl={EmaxPeluImgs} />
+	<AboutProyect aboutProyect={EmaxPelu} />
+	<BackyFront aboutProyect={EmaxPelu} />
+	<ProyectSkills aboutProyect={EmaxPelu} />
+	<Contact />
+</Layout>
