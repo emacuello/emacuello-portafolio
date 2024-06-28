@@ -11,7 +11,7 @@
 		<p
 			class="text-xl font-bold hidden hover:text-[#7456FF] cursor-default md:block"
 		>
-			Emacuello
+			<a href="/">Emacuello</a>
 		</p>
 	</div>
 
@@ -44,12 +44,42 @@
 	<!-- buttons -->
 	<div class="w-6/12 md:w-3/12 flex justify-end">
 		<button
-			class="p-0.5 font-bold border-2 border-[#7456FF] text-[#7456FF] rounded-md hover:bg-[#7456FF] hover:text-white duration-200 md:p-2"
-			>Contáctame</button
+			id="menu-button"
+			class="md:hidden p-0.5 font-bold border-2 border-[#7456FF] text-[#7456FF] rounded-md hover:bg-[#7456FF] hover:text-white duration-200 md:p-2"
 		>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke="currentColor"
+				class="w-6 h-6"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+					d="M4 6h16M4 12h16m-7 6h7"></path>
+			</svg>
+		</button>
+		<button
+			class="hidden md:block p-0.5 font-bold border-2 border-[#7456FF] text-[#7456FF] rounded-md hover:bg-[#7456FF] hover:text-white duration-200 md:p-2"
+		>
+			Contáctame
+		</button>
 	</div>
 </header>
-
+<div
+	id="dropdown-menu"
+	class="hidden bg-[#131313] text-white space-y-2 p-4 text-center font-bold"
+>
+	<a href="/#about" class="block">Sobre mí</a>
+	<a href="/#proyects" class="block">Proyectos</a>
+	<a href="/#skills" class="block">Tecnologías</a>
+	<a href="/#experience" class="block">Experiencia</a>
+	<button class="bg-[#7456FF] w-full text-white p-2 rounded"
+		>Contáctame</button
+	>
+</div>
 <style>
 	.header {
 		z-index: 10;
@@ -58,3 +88,13 @@
 		transition: all 0.3s ease;
 	}
 </style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const menuButton = document.getElementById('menu-button');
+		const dropdownMenu = document.getElementById('dropdown-menu');
+
+		menuButton!.addEventListener('click', () => {
+			dropdownMenu!.classList.toggle('hidden');
+		});
+	});
+</script>
