@@ -22,3 +22,24 @@ export interface Proyect {
 	extraImg?: ImageUrl;
 	skills: Tecnologias[];
 }
+
+export interface Microservice extends Proyect {
+	architecture: ImageUrl;
+	apiGateway: {
+		repository: string;
+		content: string;
+	};
+	microsercie1?: Pms;
+	microsercie2?: Pms;
+	microsercie3?: Pms;
+	microsercie4?: Pms;
+}
+
+type Pms = {
+	deploy?: string;
+	name?: string;
+	content: string;
+	framework: string;
+	image: ImageUrl;
+	repository: string;
+};

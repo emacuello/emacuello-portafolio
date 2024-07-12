@@ -1,0 +1,161 @@
+---
+import type { Microservice } from '../utils/interfaces.ts';
+interface Props {
+	aboutProyect: Microservice;
+}
+const { aboutProyect } = Astro.props;
+---
+
+<section class="text-gray-400 body-font">
+	<div class="container px-5 py-24 mx-auto">
+		<div class="rounded-lg h-64 sm:h-auto overflow-hidden pb-10">
+			<img
+				alt={aboutProyect.architecture.alt}
+				class="object-cover sm:object-contain h-full sm:h-auto w-full sm:w-auto"
+				src={aboutProyect.architecture.url}
+			/>
+		</div>
+
+		<div class="flex flex-wrap w-full mb-20">
+			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+				<h1
+					class="sm:text-3xl text-2xl font-medium title-font mb-2 text-indigo-500"
+				>
+					Microservicios
+				</h1>
+				<div class="h-1 w-20 bg-indigo-500 rounded"></div>
+			</div>
+			<p class="lg:w-1/2 w-full leading-relaxed">
+				{aboutProyect.apiGateway.content}
+
+				<a
+					class="text-white border-0 mt-2 focus:outline-none hover:text-indigo-600 rounded text-lg"
+					href={aboutProyect.apiGateway.repository}
+					target="_blank">Repositorio</a
+				>
+			</p>
+		</div>
+		<div class="flex flex-wrap -m-4">
+			<div class="xl:w-1/4 md:w-1/2 p-4">
+				<div class="bg-[#131313] p-6 rounded-lg">
+					<img
+						class="h-40 rounded w-full object-cover object-center mb-6"
+						src={aboutProyect.microsercie1?.image.url}
+						alt={aboutProyect.microsercie1?.image.alt}
+					/>
+					<h3
+						class="tracking-widest text-indigo-500 text-xs font-medium title-font"
+					>
+						{aboutProyect.microsercie1?.framework}
+					</h3>
+					<h4
+						class="tracking-widest text-indigo-500 text-xs font-medium title-font"
+					>
+						{aboutProyect.microsercie1?.deploy}
+					</h4>
+					<h2 class="text-lg text-white font-medium title-font mb-4">
+						{aboutProyect.microsercie1?.name}
+					</h2>
+					<p class="leading-relaxed text-base">
+						{aboutProyect.microsercie1?.content}
+					</p>
+					<a
+						class="inline-flex text-white bg-[#7456FF] border-0 mt-2 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+						href={aboutProyect.microsercie1?.repository}
+						target="_blank">Repositorio</a
+					>
+				</div>
+			</div>
+			<div class="xl:w-1/4 md:w-1/2 p-4">
+				<div class="bg-[#131313] p-6 rounded-lg">
+					<img
+						class="h-40 rounded w-full object-cover object-center mb-6"
+						src={aboutProyect.microsercie2?.image.url}
+						alt={aboutProyect.microsercie2?.image.alt}
+					/>
+					<h3
+						class="tracking-widest text-indigo-500 text-xs font-medium title-font"
+					>
+						{aboutProyect.microsercie2?.framework}
+					</h3>
+					<h4
+						class="tracking-widest text-indigo-500 text-xs font-medium title-font"
+					>
+						{aboutProyect.microsercie2?.deploy}
+					</h4>
+					<h2 class="text-lg text-white font-medium title-font mb-4">
+						{aboutProyect.microsercie2?.name}
+					</h2>
+					<p class="leading-relaxed text-base">
+						{aboutProyect.microsercie2?.content}
+					</p>
+					<a
+						class="inline-flex text-white bg-[#7456FF] border-0 mt-2 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+						href={aboutProyect.microsercie2?.repository}
+						target="_blank">Repositorio</a
+					>
+				</div>
+			</div>
+			<div class="xl:w-1/4 md:w-1/2 p-4">
+				<div class="bg-[#131313] p-6 rounded-lg">
+					<img
+						class="h-40 rounded w-full object-cover object-center mb-6"
+						src={aboutProyect.microsercie3?.image.url}
+						alt={aboutProyect.microsercie3?.image.alt}
+					/>
+					<h3
+						class="tracking-widest text-indigo-500 text-xs font-medium title-font"
+					>
+						{aboutProyect.microsercie3?.framework}
+					</h3>
+					<h4
+						class="tracking-widest text-indigo-500 text-xs font-medium title-font"
+					>
+						{aboutProyect.microsercie3?.deploy}
+					</h4>
+					<h2 class="text-lg text-white font-medium title-font mb-4">
+						{aboutProyect.microsercie3?.name}
+					</h2>
+					<p class="leading-relaxed text-base">
+						{aboutProyect.microsercie3?.content}
+					</p>
+					<a
+						class="inline-flex text-white bg-[#7456FF] border-0 mt-2 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+						href={aboutProyect.microsercie3?.repository}
+						target="_blank">Repositorio</a
+					>
+				</div>
+			</div>
+			<div class="xl:w-1/4 md:w-1/2 p-4">
+				<div class="bg-[#131313] p-6 rounded-lg">
+					<img
+						class="h-40 rounded w-full object-cover object-center mb-6"
+						src={aboutProyect.microsercie4?.image.url}
+						alt={aboutProyect.microsercie4?.image.alt}
+					/>
+					<h3
+						class="tracking-widest text-indigo-500 text-xs font-medium title-font"
+					>
+						{aboutProyect.microsercie4?.framework}
+					</h3>
+					<h4
+						class="tracking-widest text-indigo-500 text-xs font-medium title-font"
+					>
+						{aboutProyect.microsercie4?.deploy}
+					</h4>
+					<h2 class="text-lg text-white font-medium title-font mb-4">
+						{aboutProyect.microsercie4?.name}
+					</h2>
+					<p class="leading-relaxed text-base text-gray-400">
+						{aboutProyect.microsercie4?.content}
+					</p>
+					<a
+						class="inline-flex text-white bg-[#7456FF] border-0 mt-2 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+						href={aboutProyect.microsercie4?.repository}
+						target="_blank">Repositorio</a
+					>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

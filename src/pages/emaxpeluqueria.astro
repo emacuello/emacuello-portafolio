@@ -6,6 +6,7 @@ import { EmaxPeluImgs, EmaxPelu } from '../utils/contentEmaxPelu';
 import AboutProyect from '../components/AboutProyect.astro';
 import BackyFront from '../components/BackyFront.astro';
 import ProyectSkills from '../components/ProyectSkills.astro';
+import Microservice from '../components/Microservice.astro';
 ---
 
 <Layout title="EmaxPeluqueria">
@@ -17,6 +18,7 @@ import ProyectSkills from '../components/ProyectSkills.astro';
 	<Carrousel imgUrl={EmaxPeluImgs} />
 	<AboutProyect aboutProyect={EmaxPelu} />
 	<BackyFront aboutProyect={EmaxPelu} />
+	<Microservice aboutProyect={EmaxPelu} />
 	<ProyectSkills aboutProyect={EmaxPelu} />
 	<Contact />
 </Layout>
