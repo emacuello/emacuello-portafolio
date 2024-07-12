@@ -133,8 +133,8 @@ export const EmaxPelu: Microservice = {
 		content:
 			'El microservicio está creado en Express.Js con TypeScript. Se encarga de la creacion del usuario, sus credenciales y del crud de los turnos hecho por el usuario, para almacenar los datos se usa PostgreSQL y TypeORM, las tablas tienen relaciones entre ellas. En el registro interno del usuario se usa Bcrypt para encriptar la contraseña, para el inicio de sesión se usa JWT. Se comunica con el Api Gateway mediante peticiones HTTP. El microservicio se aloja en Vercel y su base de datos se aloja en Railway.',
 		image: {
-			url: 'https://res.cloudinary.com/dxrjz4ycj/image/upload/f_auto,q_auto/oounzuhggq34oumrd2kz',
-			alt: 'DER de Emax Peluqueria',
+			url: 'https://res.cloudinary.com/dxrjz4ycj/image/upload/f_auto,q_auto/oi0vuowsidxbklwjvza3',
+			alt: 'Captura de pantalla del Dashboard de usuario',
 		},
 		repository:
 			'https://github.com/emacuello/emaxpeluqueria/tree/main/back',
@@ -146,8 +146,8 @@ export const EmaxPelu: Microservice = {
 		content:
 			'El microservicio está creado en NestJS con TypeScript. Se encarga de la creación de productos y responde a las llamadas del Api Gateway mediante mensajes que recibe por Redis. Para almacenar las fotos de los productos utiliza Cloudinary, y para almacenar los datos se usa MongoDB y Mongoose. Solo los administradores pueden crear y modificar productos. La aplicación está dockerizada para su despliegue en Render mediante su imagen de Docker, la cual se actualiza en cada push a la rama principal del repositorio de GitHub con el uso de GitHub Actions. La base de datos está en MongoDB Atlas.',
 		image: {
-			url: 'https://res.cloudinary.com/dxrjz4ycj/image/upload/f_auto,q_auto/q3br3dupxykmtwckvvh5',
-			alt: 'Imagen de DockerHub de Emax Peluqueria Shop',
+			url: 'https://res.cloudinary.com/dxrjz4ycj/image/upload/f_auto,q_auto/zosqmwxnh30yibvsyr1b',
+			alt: 'Imagen de Emax Peluqueria Shop',
 		},
 		repository: 'https://github.com/emacuello/shop-emaxpeluqueria',
 	},
