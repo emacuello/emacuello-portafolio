@@ -45,16 +45,16 @@
 						</div>
 						<p class="text-[#F5F2FF] text-base">
 							Aplicación de turnos para peluquería. Creada usando
-							Express y TypeScript en el backend y React/Vite con
-							Javascript en el frontend. Desde el back hace uso
-							PostgreSQL con TypeOrm para la base datos, JWT para
-							la autenticación y Bcrypt para la seguridad de las
-							contraseñas, por parte del front-end hace uso de
-							React-Bootstrap para los componentes y estilos,
+							React/Vite con Javascript en el frontend y desde el
+							backend se usó la arquitectura de microservicios,
+							con Nestjs y ExpressJs. Desde el front-end hace uso
+							de React-Bootstrap para los componentes y estilos,
 							Redux para el estado global y React-router-dom para
-							el enrutado. Aplicación backend y frontend
-							desplegada en Vercel y con base de datos alojada en
-							Railway.
+							el enrutado, y desde el back se divide en un api
+							gateway y 4 microservicios, la comunicacion se hace
+							mediante peticiones HTTP y Redis. Aplicación
+							frontend desplegada en Vercel, mientras que los
+							microservicios estan en Vercel, Render y AWS EC2.
 							<a
 								href="/emaxpeluqueria"
 								class="text-[#7456FF] font-semibold"
