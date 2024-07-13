@@ -118,8 +118,8 @@ export const EmaxPelu: Microservice = {
 	funcionalityFront:
 		'Aplicación construida con React/Vite y Javascript, contiene estado globales haciendo uso de Redux para poder contener la información así evitando peticiones recurrentes al backend, almacena sus tokens en LocalStorage, para los estilos se usó React-Bootstrap, además se usa AOS para algunas animaciones. La aplicacion se está deplegada en Vercel.',
 	architecture: {
-		url: 'https://res.cloudinary.com/dxrjz4ycj/image/upload/f_auto,q_auto/ma7ybaiurrv9dtxynmbp',
-		alt: 'Imgen explicativa de los microservicios de Emax Peluqueria, creado con Excalidraw',
+		url: 'https://res.cloudinary.com/dxrjz4ycj/image/upload/f_auto,q_auto/ypf5twyrewahtu3frvbf',
+		alt: 'Imgen explicativa de los microservicios de Emax Peluqueria, creado con Excalidraw by emacuello',
 	},
 	apiGateway: {
 		content:
