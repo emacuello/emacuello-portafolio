@@ -1,9 +1,4 @@
-import type {
-	ImageUrl,
-	IpreviewProyect,
-	Microservice,
-	Proyect,
-} from './interfaces';
+import type { ImageUrl, IpreviewProyect, Microservice } from './interfaces';
 
 export const EmaxPeluImgs: ImageUrl[] = [
 	{
