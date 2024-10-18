@@ -1,0 +1,79 @@
+---
+import type { IpreviewProyect } from '../utils/interfaces';
+interface Props {
+	contentPreview: IpreviewProyect;
+}
+const { contentPreview } = Astro.props;
+---
+
+<div class="max-w-sm w-full sm:max-w-full sm:flex pt-5 ml-1 sm:ml-5">
+	<div
+		class="h-48 sm:h-auto sm:w-48 flex-none bg-cover rounded-t sm:rounded-t-none sm:rounded-l text-center overflow-hidden"
+		style=`background-image: url(${contentPreview.img.url})`
+		title=`${contentPreview.img.alt}`
+	>
+	</div>
+	<div
+		class="bg-[#131313] rounded-b sm:rounded-b-none sm:rounded-r p-4 flex flex-col justify-between leading-normal"
+	>
+		<div class="mb-8">
+			<p class="text-sm text-[#c7d2fe] flex items-center">
+				{
+					contentPreview.enviroment.img ? (
+						<img
+							src={contentPreview.enviroment.img.url}
+							alt={contentPreview.enviroment.img.alt}
+						/>
+					) : (
+						<svg
+							width="0.75rem"
+							height="0.75rem"
+							viewBox="0 0 41 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							class="fill-current mr-2"
+						>
+							<path
+								d="M30.126 0H21.62v24h8.506V0ZM16.41 0H7.871v24h8.537V0Z"
+								fill="#fff"
+							/>
+							<path
+								d="M7.69 14.603v7.005c7.323-3.661 28.941-10.337 31.51-10.294.892 0-1.28-1.593-2.178-1.593-1.3 0-16.116 1.154-29.15 4.882"
+								fill="#FFE84D"
+							/>
+							<path
+								d="M34.167 8.714c.006.068.194-.048.567.244.177.14.312.326.39.537a.938.938 0 0 0-.366.61 1.688 1.688 0 0 0 0 .262c0 .178-.042.47 0 .61.043.141.043.27.043.385v.068a.086.086 0 0 1 0 .042c.015.389.22.745.55.952a1.22 1.22 0 0 1-.312.61c-.33.323-.525.323-.525.323s.988.684 1.568-.115c.142-.208.251-.436.324-.677h.274a7.52 7.52 0 0 0 3.295-.928c.188-.114.342-.276.446-.47.04-.075.07-.155.091-.239.024-.111.03-.227.019-.341a1.13 1.13 0 0 0-.714-.983 7.557 7.557 0 0 0-3.387-.451l-.293.03a2.31 2.31 0 0 0-.403-.58.914.914 0 0 0-.676-.301c-.481 0-.897.365-.892.411"
+								fill="#fff"
+							/>
+						</svg>
+					)
+				}
+				{contentPreview.enviroment.context}
+			</p>
+			<div class="text-white font-bold text-xl mb-2">
+				{contentPreview.name}
+			</div>
+			<p class="text-[#F5F2FF] text-base">
+				{contentPreview.preview}
+				<a href="/emaxpeluqueria" class="text-[#7456FF] font-semibold">
+					Quiero saber más</a
+				>
+			</p>
+		</div>
+		<div class="flex items-center">
+			<a href={contentPreview.author.link} target="_blank">
+				<img
+					class="w-10 h-10 rounded-full mr-4"
+					src={contentPreview.author.img.url}
+					alt={contentPreview.author.img.alt}
+				/>
+			</a>
+			<div class="text-sm">
+				<p class="text-white leading-none">
+					{contentPreview.author.name}
+				</p>
+				<p class="text-[#E0DAFF">{contentPreview.author.date}</p>
+			</div>
+		</div>
+	</div>
+</div>
