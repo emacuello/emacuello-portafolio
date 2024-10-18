@@ -2,8 +2,9 @@
 import type { IpreviewProyect } from '../utils/interfaces';
 interface Props {
 	contentPreview: IpreviewProyect;
+	moreInfo: string;
 }
-const { contentPreview } = Astro.props;
+const { contentPreview, moreInfo } = Astro.props;
 ---
 
 <div class="max-w-sm w-full sm:max-w-full sm:flex pt-5 ml-1 sm:ml-5">
@@ -55,7 +56,7 @@ const { contentPreview } = Astro.props;
 			</div>
 			<p class="text-[#F5F2FF] text-base">
 				{contentPreview.preview}
-				<a href="/emaxpeluqueria" class="text-[#7456FF] font-semibold">
+				<a href={moreInfo} class="text-[#7456FF] font-semibold">
 					Quiero saber más</a
 				>
 			</p>
