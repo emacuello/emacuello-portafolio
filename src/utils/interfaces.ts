@@ -43,3 +43,19 @@ type Pms = {
 	image: ImageUrl;
 	repository: string;
 };
+
+export interface IpreviewProyect {
+	enviroment: {
+		context: string;
+		img?: ImageUrl;
+	};
+	name: string;
+	preview: string;
+	img: ImageUrl;
+	author: {
+		name: string;
+		img: ImageUrl;
+		date: string;
+		link: string;
+	};
+}
