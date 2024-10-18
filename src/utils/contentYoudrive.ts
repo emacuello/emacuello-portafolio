@@ -22,7 +22,7 @@ export const youdriveContent: Proyect = {
 		'YouDrive es una aplicación de renta de autos de persona a persona, creada para el proyecto final de Henry. Apuntamos a este nicho porque detectamos que en Argentina había muy pocas aplicaciones similares, y la mayoría de ellas eran centralizadas, por lo que nos pareció ideal hacerlo de este modo.',
 	myRol: 'Formé parte del equipo de backend. Fuimos un equipo de 4 personas con roles bien definidos. Mi aporte al proyecto fue en la autenticación interna y externa, autorización, integración a la base de datos, pasarela de pagos, despliegue de ambas aplicaciones: el backend en AWS EC2 y el frontend en Vercel.',
 	imgDER: {
-		url: 'https://res.cloudinary.com/dxrjz4ycj/image/upload/f_auto,q_auto/lvtu44tzc81gjac2e2f7',
+		url: 'https://res.cloudinary.com/dxrjz4ycj/image/upload/f_auto,q_auto/v1/DER/km8grixx3mhhopoylc5y',
 		alt: 'Diagrama entidad relación de YouDrive',
 	},
 	funcionalityBack:
