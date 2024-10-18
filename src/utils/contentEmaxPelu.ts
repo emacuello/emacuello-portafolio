@@ -1,4 +1,9 @@
-import type { ImageUrl, Microservice, Proyect } from './interfaces';
+import type {
+	ImageUrl,
+	IpreviewProyect,
+	Microservice,
+	Proyect,
+} from './interfaces';
 
 export const EmaxPeluImgs: ImageUrl[] = [
 	{
@@ -174,5 +179,27 @@ export const EmaxPelu: Microservice = {
 			alt: 'Diagrama del flujo de obtención de accesstoken',
 		},
 		repository: 'https://github.com/emacuello/apioauthtoken',
+	},
+};
+
+export const contentPreviewEmaxPelu: IpreviewProyect = {
+	enviroment: {
+		context: 'Bootcamp Henry y personal',
+	},
+	name: 'EmaxPeluqueria 💈✂️',
+	img: {
+		url: 'https://res.cloudinary.com/dxrjz4ycj/image/upload/f_auto,q_auto/kybczcszg6hnowcfkpay',
+		alt: 'Preview de EmaxPeluqueria',
+	},
+	preview:
+		'Aplicación de turnos para peluquería. Creada usando React/Vite con Javascript en el frontend y desde el backend se usó la arquitectura de microservicios, con Nestjs y ExpressJs. Desde el front-end hace uso de React-Bootstrap para los componentes y estilos, Redux para el estado global y React-router-dom para el enrutado, y desde el back se divide en un api gateway y 4 microservicios, la comunicacion se hace mediante peticiones HTTP y Redis. Aplicación frontend desplegada en Vercel, mientras que los microservicios estan en Vercel, Render y AWS EC2.',
+	author: {
+		name: 'Emacuello',
+		img: {
+			url: 'https://avatars.githubusercontent.com/u/84103575?v=4',
+			alt: 'Emacuello avatar',
+		},
+		date: 'Abril 2024',
+		link: 'https://emacuello.link',
 	},
 };

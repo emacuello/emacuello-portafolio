@@ -1,4 +1,4 @@
-import type { ImageUrl, Proyect } from './interfaces';
+import type { ImageUrl, IpreviewProyect, Proyect } from './interfaces';
 
 export const youdriveImgs: ImageUrl[] = [
 	{
@@ -81,4 +81,26 @@ export const youdriveContent: Proyect = {
 			},
 		},
 	],
+};
+
+export const contentPreviewYoudrive: IpreviewProyect = {
+	enviroment: {
+		context: 'Bootcamp Henry',
+	},
+	name: 'YouDrive 🚗',
+	preview:
+		'Aplicación de renta de autos persona a persona, fue creada como proyecto final de Henry. Trabajo colaborativo entre 7 personas, del cual formé parte del equipo de back-end. Aplicacion creada usando los frameworks de NestJs y NextJs, backend desplegado en AWS EC2, frontend en Vercel y con base de datos de PostgreSQL alojada en Railway.',
+	img: {
+		url: 'https://res.cloudinary.com/dxrjz4ycj/image/upload/f_auto,q_auto/vfzsbxdzekykpeawi6cx',
+		alt: 'Preview de YouDrive',
+	},
+	author: {
+		name: 'Grupo 3 Henry',
+		img: {
+			url: 'https://res.cloudinary.com/dxrjz4ycj/image/upload/f_auto,q_auto/rqeks41kvzw0elvunpen',
+			alt: 'Grupo 3 Henry avatar',
+		},
+		date: 'Junio 2024',
+		link: 'https://github.com/maccari78/PM6-grupo3',
+	},
 };

@@ -1,4 +1,4 @@
-import type { ImageUrl, Proyect } from './interfaces';
+import type { ImageUrl, IpreviewProyect, Proyect } from './interfaces';
 
 export const EmacomerceImgs: ImageUrl[] = [
 	{
@@ -81,4 +81,26 @@ export const emacommerce: Proyect = {
 		},
 	],
 	title: 'Emacommerce',
+};
+
+export const contentPreviewEmacommerce: IpreviewProyect = {
+	enviroment: {
+		context: 'Bootcamp Henry',
+	},
+	name: 'Emacommerce 🛒',
+	preview:
+		'Rest API ecommerce de productos electrónicos, aplicación backend creada en NestJs usando tecnologías como TypeScript, Docker, Cloudinary, PostgreSQL, Bcrypt y Swagger para la documentación, desplegado en Railway haciendo uso de Github Actions.',
+	img: {
+		url: 'https://res.cloudinary.com/dxrjz4ycj/image/upload/f_auto,q_auto/olvpx1zqrseuay686uu3',
+		alt: 'Preview de Emacommerce',
+	},
+	author: {
+		name: 'Emacuello',
+		img: {
+			url: 'https://avatars.githubusercontent.com/u/84103575?v=4',
+			alt: 'Emacuello avatar',
+		},
+		date: 'Mayo 2024',
+		link: 'https://emacuello.link',
+	},
 };
