@@ -22,6 +22,7 @@ const { contentPreview, moreInfo } = Astro.props;
 				{
 					contentPreview.enviroment.img ? (
 						<img
+							class="w-5 h-5 rounded-full mr-4"
 							src={contentPreview.enviroment.img.url}
 							alt={contentPreview.enviroment.img.alt}
 						/>
