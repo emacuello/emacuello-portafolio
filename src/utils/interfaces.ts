@@ -59,3 +59,44 @@ export interface IpreviewProyect {
 		link: string;
 	};
 }
+
+export interface Devops {
+	img: ImageUrl;
+	pipelines: {
+		name: string;
+		resumen: string;
+		content: Pipelines[];
+	};
+	deployment: {
+		title: string;
+		name: string;
+		resumen: string;
+		content: Deployment[];
+	};
+	metrics: {
+		title: string;
+		resumen: string;
+		content: Metrics[];
+	};
+}
+
+type Pipelines = {
+	trigger: string;
+	img: ImageUrl;
+	environment: string;
+	name: string;
+	content: string;
+};
+
+type Deployment = {
+	envirment: string;
+	tittle: string;
+	content: string;
+};
+
+type Metrics = {
+	img: ImageUrl;
+	title: string;
+	name: string;
+	content: string;
+};
