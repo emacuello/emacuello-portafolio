@@ -3,6 +3,7 @@ import ContentProyectsPreview from './ContentProyectsPreview.astro';
 import { contentPreviewYoudrive } from '../utils/contentYoudrive';
 import { contentPreviewEmaxPelu } from '../utils/contentEmaxPelu';
 import { contentPreviewEmacommerce } from '../utils/contentEmacommerce';
+import { contentPreviewAdoptree } from '../utils/contentAdoptree';
 ---
 
 <section id="proyects" class="pt-12 pb-12 cursor-default">
@@ -13,6 +14,11 @@ import { contentPreviewEmacommerce } from '../utils/contentEmacommerce';
 	</h1>
 	<div class="container mx-auto p-5">
 		<div class="flex flex-wrap -mx-1 sm:-mx-4">
+			<!-- Adoptree 👇 -->
+			<ContentProyectsPreview
+				contentPreview={contentPreviewAdoptree}
+				moreInfo="/adoptree"
+			/>
 			<!-- Emax Peluqueria v2 👇 -->
 			<ContentProyectsPreview
 				contentPreview={contentPreviewEmaxPelu}
