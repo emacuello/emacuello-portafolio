@@ -10,7 +10,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -30,7 +30,7 @@ const { title } = Astro.props;
 		<Footer />
 		<style is:global>
 			:root {
-				color-scheme: light dark;
+				color-scheme: dark;
 			}
 			html {
 				font-family: system-ui, sans-serif;
