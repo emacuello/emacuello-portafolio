@@ -47,7 +47,7 @@ const { aboutProyect } = Astro.props;
 		>
 			{
 				aboutProyect.skills.map((skill) => (
-				<a class="grid w-full min-w-[7rem] transform cursor-pointer place-items-center rounded-xl  bg-blue-gray-50/50 px-3 py-2 transition-all hover:scale-105 hover:border-blue-gray-100 hover:bg-blue-gray-50/25">
+					<a class="grid w-full min-w-[7rem] transform cursor-pointer place-items-center rounded-xl  bg-blue-gray-50/50 px-3 py-2 transition-all hover:scale-105 hover:border-blue-gray-100 hover:bg-blue-gray-50/25">
 						<span class="my-6 grid h-24 w-24 place-items-center">
 							<img src={skill.img?.url} alt={skill.img?.alt} />
 						</span>

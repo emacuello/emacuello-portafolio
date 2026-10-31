@@ -1,21 +1,21 @@
 # AGENTS.md
 
-Personal portfolio site. Astro 4 + Tailwind, deployed to Vercel as serverless.
+Personal portfolio site. Astro 7 + Tailwind 4, built as a static site and deployed to Vercel. pnpm (via corepack), Node >= 22.12.
 
 ## Commands
 
-- `npm run dev` — dev server at `localhost:4321`
-- `npm run build` — runs `astro check` (TS diagnostics) then `astro build`. **Use this as the verification/lint+typecheck step**; there is no separate lint, test, or format script.
-- `npm run preview` — serve the built `dist/`
-- `npm run astro -- <args>` — passthrough to the Astro CLI
+- `pnpm dev` — dev server at `localhost:4321`
+- `pnpm build` — runs `astro check` (TS diagnostics) then `astro build`. **Use this as the verification/lint+typecheck step**; there is no separate lint, test, or format script.
+- `pnpm preview` — preview the build
+- `pnpm astro <args>` — passthrough to the Astro CLI
 
-No tests, formatter, or CI workflows exist in this repo.
+No tests, formatter, or CI workflows yet.
 
 ## Architecture
 
-- `output: 'server'` with `@astrojs/vercel/serverless` (see `astro.config.mjs`). Vercel web analytics enabled.
+- Static output with the `@astrojs/vercel` adapter and Vercel Web Analytics enabled (see `astro.config.mjs`).
 - `tsconfig.json` only `extends: astro/tsconfigs/strict` — treat strict TS as enforced.
-- Tailwind is wired via `@astrojs/tailwind` integration (not a standalone PostCSS pipeline). Config lives in `tailwind.config.mjs` and sets `darkMode: 'class'`.
+- Tailwind 4 via `@tailwindcss/vite`. No `tailwind.config.*`: theme, custom animations (`text-gradient`, `background-shine`) and the class-based `dark` variant live in `src/styles/global.css`, imported by `Layout.astro`.
 - Routing is file-based under `src/pages/`. Each non-`index` page (e.g. `adoptree.astro`, `emacommerce.astro`, `emaxpeluqueria.astro`, `youdrive.astro`) is a per-project detail page.
 - Per-project content is not markdown/CMS — it lives in typed TS modules under `src/utils/content*.ts`, shaped by `src/utils/interfaces.ts`. Edit those modules (and `interfaces.ts`) when adding/changing a project, not a content collection.
 - Components are plain `.astro` (`src/components/`); the landing page (`src/pages/index.astro`) composes `Section`, `Proyects`, `Skills`, `Experience`, `Contact` inside `src/layouts/Layout.astro`.
