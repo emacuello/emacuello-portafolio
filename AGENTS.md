@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Personal portfolio site. Astro 7 + Tailwind 4, built as a static site and deployed to Vercel. pnpm (via corepack), Node >= 22.12.
+Personal portfolio site. Astro 7 + Tailwind 4, built as a static site and deployed to Vercel. pnpm (via corepack), Node 24.
 
 ## Commands
 
@@ -9,7 +9,7 @@ Personal portfolio site. Astro 7 + Tailwind 4, built as a static site and deploy
 - `pnpm preview` — preview the build
 - `pnpm astro <args>` — passthrough to the Astro CLI
 
-No tests, formatter, or CI workflows yet.
+No tests or formatter. CI (`.github/workflows/ci.yml`) runs `pnpm build` on PRs and pushes to main.
 
 ## Architecture
 

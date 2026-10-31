@@ -2,7 +2,7 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-Personal portfolio of Emanuel Cuello. Astro 7 + Tailwind 4, static build deployed to Vercel. pnpm (via corepack), Node >= 22.12. All site content is in Spanish.
+Personal portfolio of Emanuel Cuello. Astro 7 + Tailwind 4, static build deployed to Vercel. pnpm (via corepack), Node 24. All site content is in Spanish.
 
 ## Commands
 
@@ -10,7 +10,7 @@ Personal portfolio of Emanuel Cuello. Astro 7 + Tailwind 4, static build deploye
 - `pnpm build` — runs `astro check` (type-check) then `astro build`; a type error fails the build
 - `pnpm preview` — preview the build
 
-There are no tests or linter; `pnpm build` (type-check + build) is the only check.
+There are no tests or linter; `pnpm build` (type-check + build) is the only check, and what CI (`.github/workflows/ci.yml`) runs.
 
 ## Architecture
 
