@@ -195,6 +195,6 @@ export const contentPreviewEmaxPelu: IpreviewProyect = {
 			alt: 'Emacuello avatar',
 		},
 		date: 'Abril 2024',
-		link: 'https://emacuello.link',
+		// link: 'https://emacuello.link', // desactivado, no se va a migrar
 	},
 };

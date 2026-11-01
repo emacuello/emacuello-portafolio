@@ -101,6 +101,6 @@ export const contentPreviewEmacommerce: IpreviewProyect = {
 			alt: 'Emacuello avatar',
 		},
 		date: 'Mayo 2024',
-		link: 'https://emacuello.link',
+		// link: 'https://emacuello.link', // desactivado, no se va a migrar
 	},
 };
