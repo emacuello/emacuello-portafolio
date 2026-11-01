@@ -56,7 +56,7 @@ export interface IpreviewProyect {
 		name: string;
 		img: ImageUrl;
 		date: string;
-		link: string;
+		link?: string;
 	};
 }
 
