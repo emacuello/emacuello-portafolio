@@ -29,7 +29,7 @@ export const adoptreeContent: Proyect = {
 		'La aplicación Backend usa como lenguaje TypeScript y el Framework de Nestjs, la base de datos de PostgreSql, Prisma como ORM, OAuth como login externo y Mercado Pago como pasarela de pago',
 	funcionalityFront:
 		'La aplicación frontend fue construida con React.Js, TypeScript y Vite. Se usó Tailwind CSS para los estilos. También se integró con Firebase para las notificaciones push, y con OAuth como Login externo.',
-	link: 'https://adoptree.vercel.app/',
+	link: 'https://adoptree.emacuello.dev/',
 	contentExtra:
 		'Mi aporte fue la creación de las Pipelines de CI/CD. Las cuales fueron creadas en ambos repositorios de GitHub, con la herramienta de Github Actions, también realicé el despliegue de la aplicación, tanto en entorno de Desarrollo como de Producción, además de crear los modulos/componentes necesarios en ambos repositorios para poder implementar las metricas necesarias para el proyecto.',
 	extraImg: {

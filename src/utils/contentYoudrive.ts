@@ -31,7 +31,7 @@ export const youdriveContent: Proyect = {
 		'La aplicación frontend fue construida con Next.JS y TypeScript. Se usó Tailwind CSS para el estilo, en conjunto con Flowbite. Cuenta con alertas de SweetAlert, loaders personalizados y utiliza Socket.io client para conectar el chat. También cuenta con validaciones por roles, guarda los tokens en localStorage y utiliza librerías como Date picker. Además, tiene un chatbot personalizado para la página. La aplicación se desplegó en Vercel.',
 	contentExtra:
 		'Como extra, implementé un chat persona a persona, usé Amazon Rekognition para filtrar imágenes, una autorización robusta de la aplicación, hice un filtrado de palabras para las publicaciones y rate limit para evitar peticiones maliciosas.',
-	link: 'https://youdrive.vercel.app/',
+	link: 'https://youdrive.emacuello.dev/',
 	title: 'YouDrive',
 	extraImg: {
 		url: 'https://res.cloudinary.com/dxrjz4ycj/image/upload/f_auto,q_auto/ud0vov7mzbcyw0b73tsf',
