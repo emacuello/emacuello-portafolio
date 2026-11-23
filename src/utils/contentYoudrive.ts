@@ -17,7 +17,7 @@ export const youdriveImgs: ImageUrl[] = [
 
 export const youdriveContent: Proyect = {
 	der: 'Cada tabla está conectada por claves foráneas que indican las relaciones entre las diferentes entidades del sistema. Por ejemplo, un usuario puede tener múltiples alquileres, notificaciones, comentarios, direcciones, coches y reseñas. Un coche puede estar relacionado con múltiples alquileres, publicaciones y reseñas.',
-	repository: 'https://github.com/maccari78/PM6-grupo3',
+	repository: 'https://github.com/emacuello/youdrive-back',
 	aboutProyect:
 		'YouDrive es una aplicación de renta de autos de persona a persona, creada para el proyecto final de Henry. Apuntamos a este nicho porque detectamos que en Argentina había muy pocas aplicaciones similares, y la mayoría de ellas eran centralizadas, por lo que nos pareció ideal hacerlo de este modo.',
 	myRol: 'Formé parte del equipo de backend. Fuimos un equipo de 4 personas con roles bien definidos. Mi aporte al proyecto fue en la autenticación interna y externa, autorización, integración a la base de datos, pasarela de pagos, despliegue de ambas aplicaciones: el backend en AWS EC2 y el frontend en Vercel.',
